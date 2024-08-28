@@ -24,6 +24,21 @@ const attack = () => {
 
 
 
+
+let attack;
+
+if (getRandomPowerUp()) {
+    attack = () => {
+        return Math.floor(Math.random() * 50) + 50; // Attack with power-up
+    };
+} else {
+    attack = () => {
+        return getRandomDamage(); // Normal attack
+    };
+}
+
+
+
 */
 
 /*
